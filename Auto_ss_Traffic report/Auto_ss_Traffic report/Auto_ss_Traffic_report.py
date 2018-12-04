@@ -2,9 +2,7 @@
 # -*- coding=utf-8 -*-
 
 import sys
-sys.path.append('/usr/local/lib/python3.4/dist-packages/PyQYT/ExtentionPackages')
-sys.path.append('/usr/lib/python3.4/site-packages/PyQYT/ExtentionPackages')
-sys.path.append('../../ExtentionPackages')
+
 
 import getpass
 import re
