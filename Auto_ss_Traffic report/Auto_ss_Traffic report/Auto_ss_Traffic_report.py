@@ -83,7 +83,7 @@ def load_txt():
 
 
 
-    smtp_attachment('smtp.163.com','kuku65ma','google99868668', 'kuku65ma@163.com','717596873@qq.com','te','dlkfh dshgi')
+    smtp_attachment('smtp.163.com','kuku64ma','5887415157', 'kuku65ma@163.com','717596873@qq.com','te','dlkfh dshgi')
     
 if __name__ == '__main__':
     load_txt()
