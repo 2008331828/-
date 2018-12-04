@@ -69,11 +69,9 @@ def qyt_smtp_attachment(mailserver, username, password, From, To, Subj, Main_Bod
 
 if __name__ == '__main__':
 
-
-    files= None
 	method_name()('ss1.caosong.pw', 'root', 'google99868668','pwd','ifconfig')
 
-    qyt_smtp_attachment('smtp.163.com',
+    #qyt_smtp_attachment('smtp.163.com',
 					  	'kuku65ma@163.com',
 					  	'google99868668', 
 					  	'kuku65ma@163.com',
