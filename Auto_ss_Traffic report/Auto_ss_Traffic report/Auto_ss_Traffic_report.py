@@ -10,6 +10,7 @@ import getpass
 import re
 import paramiko
 import time
+import os
 import sys
 import email.utils
 import smtplib
@@ -18,6 +19,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText  
 from email.mime.application import MIMEApplication
 
+'''
 def sshcmd(ip, username, password, *cmds):
 	ssh=paramiko.SSHClient()
 	ssh.load_system_host_keys()
@@ -35,7 +37,10 @@ def sshcmd(ip, username, password, *cmds):
 		print(x)
 	chan.close()
 	ssh.close()
+    ''' #备用！
 
+
+#发送模块
 def smtp_attachment(mailserver, username, password, From, To, Subj, Main_Body, ):
 	Tos = To.split(';')
 	Date = email.utils.formatdate()
@@ -63,11 +68,22 @@ def smtp_attachment(mailserver, username, password, From, To, Subj, Main_Body, )
 	else:
 		print('邮件已经成功发出！')
 
-def main():
 
-   # sshcmd('ss1.c*******ng.pw', 'root', 'go99*****868', 'ifconfig','pwd' )
+#检查流量
+def Check_traffic():
+   sy = os
+   sy.system('./ssrmu.sh > 1.txt')
+   sy.system('5 > 1.txt')
+
+
+def load_txt():
+
+   
+    
+
+
 
     smtp_attachment('smtp.163.com','kuku65ma','google99868668', 'kuku65ma@163.com','717596873@qq.com','te','dlkfh dshgi')
     
 if __name__ == '__main__':
-	main()
+    load_txt()

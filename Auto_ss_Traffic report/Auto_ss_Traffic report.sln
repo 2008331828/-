@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Auto_ss_Traffic report", "Auto_ss_Traffic report\Auto_ss_Traffic report.pyproj", "{1D545DDB-5EF3-421E-9787-024E57BA0AC9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D545DDB-5EF3-421E-9787-024E57BA0AC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D545DDB-5EF3-421E-9787-024E57BA0AC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5A3AD1A1-5CAE-4192-8925-81B73C7D3ACD}
+	EndGlobalSection
+EndGlobal
