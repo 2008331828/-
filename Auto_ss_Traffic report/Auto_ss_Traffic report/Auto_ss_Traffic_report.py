@@ -1,41 +1,16 @@
-#!/usr/bin/python3.4
+#!/usr/bin64/python2.7
 # -*- coding=utf-8 -*-
-
 import sys
-
-
 import getpass
 import re
-import paramiko
 import time
 import os
-import sys
 import email.utils
 import smtplib
 import email.utils
 from email.mime.multipart import MIMEMultipart  
 from email.mime.text import MIMEText  
 from email.mime.application import MIMEApplication
-
-'''
-def sshcmd(ip, username, password, *cmds):
-	ssh=paramiko.SSHClient()
-	ssh.load_system_host_keys()
-	ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-	ssh.connect(ip,port=22,username=username,password=password,timeout=5,compress=True)
-	chan=ssh.invoke_shell()
-	time.sleep(1)
-	x = chan.recv(2048).decode()
-
-	for cmd in cmds:
-		chan.send(cmd.encode())
-		chan.send(b'\n')
-		time.sleep(2)
-		x = chan.recv(40960).decode()
-		print(x)
-	chan.close()
-	ssh.close()
-    ''' #备用！
 
 
 #发送模块
@@ -66,22 +41,22 @@ def smtp_attachment(mailserver, username, password, From, To, Subj, Main_Body, )
 	else:
 		print('邮件已经成功发出！')
 
-
 #检查流量
 def Check_traffic():
    sy = os
-   sy.system('./ssrmu.sh > 1.txt')
-   sy.system('5 > 1.txt')
-
+   sy.system('./ssrmu.sh')
+   sy.system('5 > /root/1.txt')
+   pass
 
 def load_txt():
+     title = time.strftime('流量报告'+'%Y-%m-%d %H:%M',time.localtime(time.time()))
+     with open('/root/1.txt', 'r') as f:
+        text = f.read()
+        f.close()
+        
+        smtp_attachment('smtp.163.com','kuku64ma','5887415157', 'kuku65ma@163.com','717596873@qq.com',title,text)
+     pass
 
-   
-    
 
-
-
-    smtp_attachment('smtp.163.com','kuku64ma','5887415157', 'kuku65ma@163.com','717596873@qq.com','te','dlkfh dshgi')
-    
 if __name__ == '__main__':
     load_txt()
