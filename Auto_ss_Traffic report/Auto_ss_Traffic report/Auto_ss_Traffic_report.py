@@ -43,20 +43,19 @@ def smtp_attachment(mailserver, username, password, From, To, Subj, Main_Body, )
 
 #检查流量
 def Check_traffic():
-   sy = os
-   sy.system('./ssrmu.sh')
-   sy.system('5 > /root/1.txt')
+   os.system('/root/ssrmu.sh>1.txt && 5 >1.txt')
+  # os.system('./ssrmu.sh')
+   #os.system('5 > /root/1.txt')
    pass
-
+#读取流量
 def load_txt():
      title = time.strftime('流量报告'+'%Y-%m-%d %H:%M',time.localtime(time.time()))
      with open('/root/1.txt', 'r') as f:
         text = f.read()
         f.close()
-        
         smtp_attachment('smtp.163.com','kuku64ma','5887415157', 'kuku65ma@163.com','717596873@qq.com',title,text)
      pass
 
 
 if __name__ == '__main__':
-    load_txt()
+    Check_traffic()
