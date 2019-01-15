@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "socket_client", "socket_client\socket_client.pyproj", "{4A7DF18A-E9C8-4CFF-BEBE-660CD0D1E976}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A7DF18A-E9C8-4CFF-BEBE-660CD0D1E976}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A7DF18A-E9C8-4CFF-BEBE-660CD0D1E976}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BC050C68-1129-472C-9E23-4CA960BEB9EA}
+	EndGlobalSection
+EndGlobal
